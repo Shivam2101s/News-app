@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+          * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 80px;
+        background: rgb(251, 36, 36);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+      #news {
+        margin: 50px;
+      }
+      #latest {
+        margin-top: 40px;
+        text-align: center;
+      }
+      .inner_div {
+        width: 30%;
+        
+        margin-bottom: 30px;
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+      }
+      .img_div > img {
+        width: 250px;
+        height: 200px;
+      }
+      .img_div {
+        width: 60%;
+        gap: 40px;
+        display: flex;
+        flex-direction: row;
+      }
+      .main_div {
+          width: 60%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+          border: 2px solid rgb(214, 214, 214); 
+          margin:30px auto;
+      }
+      #qwery {
+         outline: none;
+         padding: 10px;
+         width: 50%;
+         height: 50px;
+         font-size: 18px;
+      }
+      #input_div {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+      }
+      button {
+          width: 80px;
+          height: 50px;
+          font-size: 16px;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 onclick="goToHome()">News</h1>
+    </header>
+    <div id="input_div">
+        <input type="text" id="qwery" placeholder="Search here" required/>
+        <button  onclick="searchNews()">Search</button>
+    </div>
+   
+    <div id="news"></div>
+
+</body>
+</html>
+<script src="./search.js"></script> 
